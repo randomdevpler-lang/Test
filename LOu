@@ -1,0 +1,311 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Loader = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local MainSframe = Instance.new("ScrollingFrame")
+local SAB = Instance.new("Frame")
+local Load = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local ELFB = Instance.new("Frame")
+local Load_2 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_3 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local PanicButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+
+--Properties:
+
+Loader.Name = "Loader"
+Loader.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Loader.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Loader
+MainFrame.BackgroundColor3 = Color3.fromRGB(33, 29, 29)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.067614466, 0, 0.236896351, 0)
+MainFrame.Size = UDim2.new(0.296923071, 0, 0.455489159, 0)
+
+UICorner.Parent = MainFrame
+
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.LayoutOrder = 2
+TextLabel.Position = UDim2.new(-0.0257253703, 0, 0.882434905, 0)
+TextLabel.Size = UDim2.new(1, 0, 0.117391311, 0)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "credits to mrcoolperson123 for this loader/script :D"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Rotation = 90
+UIGradient.Parent = MainFrame
+
+MainSframe.Name = "MainSframe"
+MainSframe.Parent = MainFrame
+MainSframe.Active = true
+MainSframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainSframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainSframe.BorderSizePixel = 0
+MainSframe.Position = UDim2.new(0.0880829021, 0, 0.122601956, 0)
+MainSframe.Size = UDim2.new(0.823834181, 0, 0.695585549, 0)
+MainSframe.ZIndex = 12
+
+SAB.Name = "SAB"
+SAB.Parent = MainSframe
+SAB.BackgroundColor3 = Color3.fromRGB(33, 29, 29)
+SAB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SAB.BorderSizePixel = 0
+SAB.Position = UDim2.new(0.0615255497, 0, 0.0204000603, 0)
+SAB.Size = UDim2.new(0.316037744, 0, 0.148529142, 0)
+
+Load.Name = "Load"
+Load.Parent = SAB
+Load.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Load.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Load.BorderSizePixel = 0
+Load.Position = UDim2.new(0.104999661, 0, 0.367653817, 0)
+Load.Size = UDim2.new(0.785000026, 0, 0.241545901, 0)
+Load.Font = Enum.Font.JosefinSans
+Load.Text = "Load"
+Load.TextColor3 = Color3.fromRGB(0, 0, 0)
+Load.TextSize = 22.000
+Load.TextWrapped = true
+
+TextLabel_2.Parent = SAB
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(-0.00499999989, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(1, 0, 0.241545901, 0)
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = "Steal a brainrot"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Rotation = -90
+UIGradient_2.Parent = SAB
+
+UICorner_2.Parent = SAB
+
+ELFB.Name = "ELFB"
+ELFB.Parent = MainSframe
+ELFB.BackgroundColor3 = Color3.fromRGB(33, 29, 29)
+ELFB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ELFB.BorderSizePixel = 0
+ELFB.Position = UDim2.new(0.599261403, 0, 0.0204000603, 0)
+ELFB.Size = UDim2.new(0.316037744, 0, 0.148529142, 0)
+
+Load_2.Name = "Load"
+Load_2.Parent = ELFB
+Load_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Load_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Load_2.BorderSizePixel = 0
+Load_2.Position = UDim2.new(0.0950493515, 0, 0.395094305, 0)
+Load_2.Size = UDim2.new(0.785000026, 0, 0.241545901, 0)
+Load_2.Font = Enum.Font.JosefinSans
+Load_2.Text = "Load"
+Load_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Load_2.TextSize = 22.000
+Load_2.TextWrapped = true
+
+TextLabel_3.Parent = ELFB
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(-0.00499999989, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(1, 0, 0.241545901, 0)
+TextLabel_3.Font = Enum.Font.Cartoon
+TextLabel_3.Text = "Escape logs for brainrots"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Rotation = -90
+UIGradient_3.Parent = ELFB
+
+UICorner_3.Parent = ELFB
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0, 0, -8.29202591e-08, 0)
+Title.Size = UDim2.new(1, 0, 0.103382088, 0)
+Title.Font = Enum.Font.Cartoon
+Title.Text = "Coolico Loader"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+PanicButton.Name = "PanicButton"
+PanicButton.Parent = MainFrame
+PanicButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PanicButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PanicButton.BorderSizePixel = 0
+PanicButton.Position = UDim2.new(0.910587847, 0, 0.011199832, 0)
+PanicButton.Size = UDim2.new(0.0842307657, 0, 0.0778780431, 0)
+PanicButton.Font = Enum.Font.JosefinSans
+PanicButton.Text = "X"
+PanicButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+PanicButton.TextScaled = true
+PanicButton.TextSize = 34.000
+PanicButton.TextWrapped = true
+
+UICorner_4.Parent = PanicButton
+
+-- Scripts:
+
+local function EOWN_fake_script() -- Loader.UsernameChecker 
+	local script = Instance.new('LocalScript', Loader)
+
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local gui = script.Parent
+	
+	
+	local allowedUsers = {
+		"volox_alt",
+		"Ppplllluuuueeee",
+		"AdamJames_26"
+	}
+	
+	local allowed = false
+	
+	for _, username in ipairs(allowedUsers) do
+		if player.Name == username then
+			allowed = true
+			break
+		end
+	end
+	
+	if not allowed then
+		gui:Destroy()
+	end
+	
+end
+coroutine.wrap(EOWN_fake_script)()
+local function GVVKIX_fake_script() -- MainFrame.Drag 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+	
+end
+coroutine.wrap(GVVKIX_fake_script)()
+local function OWXGWYF_fake_script() -- Load.LocalScript 
+	local script = Instance.new('LocalScript', Load)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/randomdevpler-lang/Test/refs/heads/main/SCRIPTerd"))()
+	end)
+end
+coroutine.wrap(OWXGWYF_fake_script)()
+local function QNNDSY_fake_script() -- Load_2.LocalScript 
+	local script = Instance.new('LocalScript', Load_2)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/randomdevpler-lang/Test/refs/heads/main/idk"))()
+	end)
+end
+coroutine.wrap(QNNDSY_fake_script)()
+local function RCMTCV_fake_script() -- PanicButton.LocalScript 
+	local script = Instance.new('LocalScript', PanicButton)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		-- Find the ScreenGui this button belongs to
+		local gui = button:FindFirstAncestorOfClass("ScreenGui")
+	
+		if gui then
+			gui:Destroy()
+		end
+	end)
+	
+end
+coroutine.wrap(RCMTCV_fake_script)()

@@ -1,0 +1,998 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local LogsBrainrot = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local MainSframe = Instance.new("ScrollingFrame")
+local LocationTp = Instance.new("Frame")
+local GoPos = Instance.new("TextButton")
+local Title = Instance.new("TextLabel")
+local SavePos = Instance.new("TextButton")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local InfJump = Instance.new("Frame")
+local iNFjUMP = Instance.new("TextButton")
+local Title_2 = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local TpForward = Instance.new("Frame")
+local Teleport = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_3 = Instance.new("UICorner")
+local Fly = Instance.new("Frame")
+local Teleport_2 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local UIGradient_4 = Instance.new("UIGradient")
+local UICorner_4 = Instance.new("UICorner")
+local Title_3 = Instance.new("TextLabel")
+local PanicButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
+local UIGradient_5 = Instance.new("UIGradient")
+
+--Properties:
+
+LogsBrainrot.Name = "Logs Brainrot"
+LogsBrainrot.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+LogsBrainrot.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+LogsBrainrot.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = LogsBrainrot
+MainFrame.BackgroundColor3 = Color3.fromRGB(33, 29, 29)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.0837683082, 0, 0.271549821, 0)
+MainFrame.Size = UDim2.new(0.296923071, 0, 0.455489159, 0)
+
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.LayoutOrder = 2
+TextLabel.Position = UDim2.new(-0.00499999989, 0, 0.882434905, 0)
+TextLabel.Size = UDim2.new(1, 0, 0.117391311, 0)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "credits to mrcoolperson123 for this script!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+MainSframe.Name = "MainSframe"
+MainSframe.Parent = MainFrame
+MainSframe.Active = true
+MainSframe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainSframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainSframe.BorderSizePixel = 0
+MainSframe.Position = UDim2.new(0.0829015523, 0, 0.14977327, 0)
+MainSframe.Size = UDim2.new(0.823834181, 0, 0.695585549, 0)
+MainSframe.ZIndex = 12
+
+LocationTp.Name = "LocationTp"
+LocationTp.Parent = MainSframe
+LocationTp.BackgroundColor3 = Color3.fromRGB(33, 29, 29)
+LocationTp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LocationTp.BorderSizePixel = 0
+LocationTp.Position = UDim2.new(0.36858201, 0, 0.0132717593, 0)
+LocationTp.Size = UDim2.new(0.25, 0, 0.105999999, 0)
+
+GoPos.Name = "GoPos"
+GoPos.Parent = LocationTp
+GoPos.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GoPos.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GoPos.BorderSizePixel = 0
+GoPos.Position = UDim2.new(0.104999997, 0, 0.311337233, 0)
+GoPos.Size = UDim2.new(0.785000026, 0, 0.217391312, 0)
+GoPos.Font = Enum.Font.JosefinSans
+GoPos.Text = "TELEPORT!"
+GoPos.TextColor3 = Color3.fromRGB(0, 0, 0)
+GoPos.TextScaled = true
+GoPos.TextSize = 14.000
+GoPos.TextWrapped = true
+
+Title.Name = "Title"
+Title.Parent = LocationTp
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(1, 0, 0.217391312, 0)
+Title.Font = Enum.Font.Cartoon
+Title.Text = "TP LOCATION"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+SavePos.Name = "SavePos"
+SavePos.Parent = LocationTp
+SavePos.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SavePos.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SavePos.BorderSizePixel = 0
+SavePos.Position = UDim2.new(0.104999997, 0, 0.592979789, 0)
+SavePos.Size = UDim2.new(0.785000026, 0, 0.217391312, 0)
+SavePos.Font = Enum.Font.JosefinSans
+SavePos.Text = "SAVE LOCATION"
+SavePos.TextColor3 = Color3.fromRGB(0, 0, 0)
+SavePos.TextScaled = true
+SavePos.TextSize = 35.000
+SavePos.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Rotation = 90
+UIGradient.Parent = LocationTp
+
+UICorner.Parent = LocationTp
+
+InfJump.Name = "InfJump"
+InfJump.Parent = MainSframe
+InfJump.BackgroundColor3 = Color3.fromRGB(33, 29, 29)
+InfJump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfJump.BorderSizePixel = 0
+InfJump.Position = UDim2.new(0.0324806832, 0, 0.133907124, 0)
+InfJump.Size = UDim2.new(0.25, 0, 0.105999999, 0)
+
+iNFjUMP.Name = "iNFjUMP"
+iNFjUMP.Parent = InfJump
+iNFjUMP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+iNFjUMP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+iNFjUMP.BorderSizePixel = 0
+iNFjUMP.Position = UDim2.new(0.104999997, 0, 0.389598161, 0)
+iNFjUMP.Size = UDim2.new(0.785000026, 0, 0.217391312, 0)
+iNFjUMP.Font = Enum.Font.JosefinSans
+iNFjUMP.Text = "ENABLE"
+iNFjUMP.TextColor3 = Color3.fromRGB(0, 0, 0)
+iNFjUMP.TextScaled = true
+iNFjUMP.TextSize = 34.000
+iNFjUMP.TextWrapped = true
+
+Title_2.Name = "Title"
+Title_2.Parent = InfJump
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.BorderSizePixel = 0
+Title_2.Size = UDim2.new(1, 0, 0.217391312, 0)
+Title_2.Font = Enum.Font.Cartoon
+Title_2.Text = "Inf Jump"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Rotation = -90
+UIGradient_2.Parent = InfJump
+
+UICorner_2.Parent = InfJump
+
+TpForward.Name = "TpForward"
+TpForward.Parent = MainSframe
+TpForward.BackgroundColor3 = Color3.fromRGB(33, 29, 29)
+TpForward.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TpForward.BorderSizePixel = 0
+TpForward.Position = UDim2.new(0.696745694, 0, 0.0122486893, 0)
+TpForward.Size = UDim2.new(0.25, 0, 0.105999999, 0)
+
+Teleport.Name = "Teleport"
+Teleport.Parent = TpForward
+Teleport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Teleport.BorderSizePixel = 0
+Teleport.Position = UDim2.new(0.104999661, 0, 0.367653817, 0)
+Teleport.Size = UDim2.new(0.785000026, 0, 0.241545901, 0)
+Teleport.Font = Enum.Font.JosefinSans
+Teleport.Text = "TP FORWARD!"
+Teleport.TextColor3 = Color3.fromRGB(0, 0, 0)
+Teleport.TextSize = 22.000
+Teleport.TextWrapped = true
+
+TextLabel_2.Parent = TpForward
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(-0.00499999989, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(1, 0, 0.241545901, 0)
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = "TP FORWARD"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Rotation = -90
+UIGradient_3.Parent = TpForward
+
+UICorner_3.Parent = TpForward
+
+Fly.Name = "Fly"
+Fly.Parent = MainSframe
+Fly.BackgroundColor3 = Color3.fromRGB(33, 29, 29)
+Fly.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.0298868809, 0, 0.009975099, 0)
+Fly.Size = UDim2.new(0.25, 0, 0.105999999, 0)
+
+Teleport_2.Name = "Teleport"
+Teleport_2.Parent = Fly
+Teleport_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Teleport_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Teleport_2.BorderSizePixel = 0
+Teleport_2.Position = UDim2.new(0.104999892, 0, 0.383383274, 0)
+Teleport_2.Size = UDim2.new(0.785000026, 0, 0.241545901, 0)
+Teleport_2.Font = Enum.Font.JosefinSans
+Teleport_2.Text = "OFF"
+Teleport_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Teleport_2.TextSize = 22.000
+Teleport_2.TextWrapped = true
+
+TextLabel_3.Parent = Fly
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.00798708387, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(1, 0, 0.241545901, 0)
+TextLabel_3.Font = Enum.Font.Cartoon
+TextLabel_3.Text = "Fly "
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_4.Rotation = -90
+UIGradient_4.Parent = Fly
+
+UICorner_4.Parent = Fly
+
+Title_3.Name = "Title"
+Title_3.Parent = MainFrame
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_3.BorderSizePixel = 0
+Title_3.Position = UDim2.new(0, 0, 0.0135855721, 0)
+Title_3.Size = UDim2.new(1, 0, 0.103382088, 0)
+Title_3.Font = Enum.Font.Cartoon
+Title_3.Text = "Escape logs for brainrots"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextSize = 29.000
+Title_3.TextWrapped = true
+
+PanicButton.Name = "PanicButton"
+PanicButton.Parent = MainFrame
+PanicButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PanicButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PanicButton.BorderSizePixel = 0
+PanicButton.Position = UDim2.new(0.906076074, 0, -0.00253748428, 0)
+PanicButton.Size = UDim2.new(0.0842307657, 0, 0.0787481815, 0)
+PanicButton.Font = Enum.Font.JosefinSans
+PanicButton.Text = "X"
+PanicButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+PanicButton.TextScaled = true
+PanicButton.TextSize = 34.000
+PanicButton.TextWrapped = true
+
+UICorner_5.Parent = PanicButton
+
+UICorner_6.Parent = MainFrame
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 40, 40)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_5.Rotation = 90
+UIGradient_5.Parent = MainFrame
+
+-- Scripts:
+
+local function OLIFAIY_fake_script() -- LocationTp.Main 
+	local script = Instance.new('LocalScript', LocationTp)
+
+	-- SERVICES
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local UIS = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	
+	local player = Players.LocalPlayer
+	local button = script.Parent
+	local enabled = false
+	-- GUI (LocalScript is inside Frame)
+	local frame = script.Parent
+	local saveBtn = frame:WaitForChild("SavePos")
+	local goBtn = frame:WaitForChild("GoPos")
+	local label = frame:WaitForChild("Title")
+	local enabled = false
+	
+	local function getChar()
+		return player.Character
+	end
+	
+	local function getHum()
+		local char = getChar()
+		return char and char:FindFirstChildOfClass("Humanoid")
+	end
+	
+	-- SETTINGS
+	local TOOL_NAME = "Flying Carpet" or "Witch's Broom"
+	local savedCFrame
+	
+	-- Get character safely
+	local function getChar()
+		return player.Character or player.CharacterAdded:Wait()
+	end
+	
+	
+	-- Equip + activate Flying Carpet
+	local function equipAndActivate()
+		local char = getChar()
+		local backpack = player:WaitForChild("Backpack")
+	
+		local tool = backpack:FindFirstChild(TOOL_NAME) or char:FindFirstChild(TOOL_NAME)
+		if not tool then
+			label.Text = "Tool not found!"
+			task.wait(3)
+			label.Text = "TP LOCATION"
+			return false
+		end
+	
+		tool.Parent = char
+		task.wait(0.2)
+	
+		pcall(function()
+			tool:Activate()
+		end)
+	
+		return true
+	end
+	
+	local function enableGodMode()
+		local hum = getHum()
+		if not hum then return end
+	
+		hum.BreakJointsOnDeath = false
+		hum:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
+		hum.MaxHealth = math.huge
+		hum.Health = hum.MaxHealth
+	
+		healthConn = hum.HealthChanged:Connect(function()
+			if enabled then
+				hum.Health = hum.MaxHealth
+			end
+		end)
+	end
+	
+	local function disableGodMode()
+		local hum = getHum()
+		if not hum then return end
+	
+		if healthConn then
+			healthConn:Disconnect()
+			healthConn = nil
+		end
+	
+		hum:SetStateEnabled(Enum.HumanoidStateType.Dead, true)
+		hum.BreakJointsOnDeath = true
+		hum.MaxHealth = 100
+		hum.Health = 100
+	end
+	
+	-- SAVE POSITION
+	saveBtn.MouseButton1Click:Connect(function()
+		local char = getChar()
+		local hrp = char:FindFirstChild("HumanoidRootPart")
+		if not hrp then return end
+	
+		savedCFrame = hrp.CFrame
+		label.Text = "Position Saved"
+	end)
+	
+	-- GO TO POSITION (SLOW STEP TELEPORT)
+	goBtn.MouseButton1Click:Connect(function()
+		if not savedCFrame then
+			label.Text = "No position saved"
+			return
+		end
+	
+		-- ENABLE GOD MODE BEFORE TP
+		pcall(function()
+			enableGodMode()
+		end)
+	
+		if not equipAndActivate() then 
+			disableGodMode()
+			return 
+		end
+	
+		task.wait(0.3)
+	
+		local char = getChar()
+		local hrp = char:FindFirstChild("HumanoidRootPart")
+		if not hrp then 
+			disableGodMode()
+			return 
+		end
+	
+		label.Text = "Teleporting..."
+	
+		local targetPos = savedCFrame.Position
+		local stepSize = 5
+		local stepDelay = 0.05
+	
+		while (hrp.Position - targetPos).Magnitude > stepSize do
+			local direction = (targetPos - hrp.Position).Unit
+			local nextPos = hrp.Position + direction * stepSize
+	
+			hrp.AssemblyLinearVelocity = Vector3.zero
+			hrp.CFrame = CFrame.new(nextPos, nextPos + hrp.CFrame.LookVector)
+	
+			task.wait(stepDelay)
+		end
+	
+		-- Final exact position + rotation
+		hrp.AssemblyLinearVelocity = Vector3.zero
+		hrp.CFrame = savedCFrame
+	
+		label.Text = "Arrived"
+	
+		-- DISABLE GOD MODE AFTER TP
+		pcall(function()
+			disableGodMode()
+		end)
+	
+		task.wait(3)
+		label.Text = "TP LOCATION"
+	end)
+	
+	
+end
+coroutine.wrap(OLIFAIY_fake_script)()
+local function YOJQBZJ_fake_script() -- iNFjUMP.LocalScript 
+	local script = Instance.new('LocalScript', iNFjUMP)
+
+	local UIS = game:GetService("UserInputService")
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local player = Players.LocalPlayer
+	local button = script.Parent
+	
+	local enabled = false
+	local jumpConn, healthConn, posConn
+	local lastCFrame
+	
+	button.Text = "OFF"
+	
+	local function getChar()
+		return player.Character
+	end
+	
+	local function getHum()
+		local char = getChar()
+		return char and char:FindFirstChildOfClass("Humanoid")
+	end
+	
+	local function getRoot()
+		local char = getChar()
+		return char and char:FindFirstChild("HumanoidRootPart")
+	end
+	
+	-- GODMODE
+	local function enableGodMode()
+		local hum = getHum()
+		if not hum then return end
+	
+		hum.BreakJointsOnDeath = false
+		hum:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
+		hum.MaxHealth = math.huge
+		hum.Health = hum.MaxHealth
+	
+		healthConn = hum.HealthChanged:Connect(function()
+			if enabled then
+				hum.Health = hum.MaxHealth
+			end
+		end)
+	end
+	
+	local function disableGodMode()
+		local hum = getHum()
+		if not hum then return end
+	
+		if healthConn then
+			healthConn:Disconnect()
+			healthConn = nil
+		end
+	
+		hum:SetStateEnabled(Enum.HumanoidStateType.Dead, true)
+		hum.BreakJointsOnDeath = true
+		hum.MaxHealth = 100
+		hum.Health = 100
+	end
+	
+	-- INFINITE JUMP
+	local function enableInfiniteJump()
+		jumpConn = UIS.JumpRequest:Connect(function()
+			if enabled then
+				local hum = getHum()
+				if hum then
+					hum:ChangeState(Enum.HumanoidStateType.Jumping)
+				end
+			end
+		end)
+	end
+	
+	local function disableInfiniteJump()
+		if jumpConn then
+			jumpConn:Disconnect()
+			jumpConn = nil
+		end
+	end
+	
+	-- ANTI TELEPORT
+	local function enableAntiTP()
+		posConn = RunService.Heartbeat:Connect(function()
+			if not enabled then return end
+			local root = getRoot()
+			if not root then return end
+	
+			if not lastCFrame then
+				lastCFrame = root.CFrame
+			end
+	
+			-- If something tries to teleport you
+			if (root.CFrame.Position - lastCFrame.Position).Magnitude > 10 then
+				root.CFrame = lastCFrame
+			else
+				lastCFrame = root.CFrame
+			end
+		end)
+	end
+	
+	local function disableAntiTP()
+		if posConn then
+			posConn:Disconnect()
+			posConn = nil
+		end
+		lastCFrame = nil
+	end
+	
+	-- BUTTON TOGGLE
+	button.MouseButton1Click:Connect(function()
+		enabled = not enabled
+	
+		if enabled then
+			button.Text = "ON"
+			enableInfiniteJump()
+			enableGodMode()
+			enableAntiTP()
+		else
+			button.Text = "OFF"
+			disableInfiniteJump()
+			disableGodMode()
+			disableAntiTP()
+		end
+	end)
+	
+	-- RESPAWN SAFETY
+	player.CharacterAdded:Connect(function()
+		if enabled then
+			task.wait(0.2)
+			enableGodMode()
+			enableAntiTP()
+		end
+	end)
+	
+end
+coroutine.wrap(YOJQBZJ_fake_script)()
+local function VJZHG_fake_script() -- Teleport.LocalScript 
+	local script = Instance.new('LocalScript', Teleport)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local player = Players.LocalPlayer
+	local button = script.Parent
+	
+	local EQUIP_TIME = 0.2 -- seconds
+	
+	button.MouseButton1Click:Connect(function()
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+		local backpack = player:WaitForChild("Backpack")
+	
+		local tool = backpack:FindFirstChild("Flying Carpet") or backpack:FindFirstChild("Witch's Broom")
+		if not tool then return end
+	
+		-- Equip ONCE
+		humanoid:EquipTool(tool)
+	
+		local startTime = os.clock()
+		local activated = false
+	
+		local connection
+		connection = RunService.Heartbeat:Connect(function()
+			if os.clock() - startTime >= EQUIP_TIME then
+				connection:Disconnect()
+				humanoid:UnequipTools()
+				return
+			end
+	
+			-- Re-equip ONLY if Roblox forces it off
+			if tool.Parent ~= character then
+				humanoid:EquipTool(tool)
+			end
+	
+			-- Activate once, only when tool is ready
+			if not activated and tool.Enabled then
+				activated = true
+				tool:Activate()
+			end
+		end)
+	end)
+	
+	
+	button.MouseButton1Click:Connect(function()
+		enabled = not enabled
+	
+		if enabled then
+			enableInfiniteJump()
+			enableGodMode()
+			enableAntiTP()
+		else
+			disableInfiniteJump()
+			disableGodMode()
+			disableAntiTP()
+		end
+	end)
+	
+end
+coroutine.wrap(VJZHG_fake_script)()
+local function BVYO_fake_script() -- Teleport.Tpforward 
+	local script = Instance.new('LocalScript', Teleport)
+
+	local Players = game:GetService("Players")
+	local TweenService = game:GetService("TweenService")
+	
+	local player = Players.LocalPlayer
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local character = player.Character or player.CharacterAdded:Wait()
+		local root = character:WaitForChild("HumanoidRootPart")
+		local humanoid = character:WaitForChild("Humanoid")
+	
+		-- Settings
+		local DISTANCE = 5
+		local BOOST_SPEED = 80
+		local NORMAL_SPEED = 16
+	
+		-- Set speed (visual / animation consistency)
+		humanoid.WalkSpeed = BOOST_SPEED
+	
+		-- Calculate target position
+		local targetCFrame = root.CFrame + (root.CFrame.LookVector * DISTANCE)
+	
+		-- Tween (smooth forward movement)
+		local tween = TweenService:Create(
+			root,
+			TweenInfo.new(
+				DISTANCE / BOOST_SPEED, -- duration based on speed
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ CFrame = targetCFrame }
+		)
+	
+		tween:Play()
+	
+		tween.Completed:Once(function()
+			humanoid.WalkSpeed = NORMAL_SPEED
+		end)
+	end)
+	
+end
+coroutine.wrap(BVYO_fake_script)()
+local function WWTQU_fake_script() -- Teleport.Health 
+	local script = Instance.new('LocalScript', Teleport)
+
+	local UIS = game:GetService("UserInputService")
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local player = Players.LocalPlayer
+	local button = script.Parent
+	local enabled = false
+	
+	local function getChar()
+		return player.Character
+	end
+	
+	local function getHum()
+		local char = getChar()
+		return char and char:FindFirstChildOfClass("Humanoid")
+	end
+	
+	
+	local function enableGodMode()
+		local hum = getHum()
+		if not hum then return end
+	
+		hum.BreakJointsOnDeath = false
+		hum:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
+		hum.MaxHealth = math.huge
+		hum.Health = hum.MaxHealth
+	
+		healthConn = hum.HealthChanged:Connect(function()
+			if enabled then
+				hum.Health = hum.MaxHealth
+			end
+		end)
+	end
+	
+	local function disableGodMode()
+		local hum = getHum()
+		if not hum then return end
+	
+		if healthConn then
+			healthConn:Disconnect()
+			healthConn = nil
+		end
+	
+		hum:SetStateEnabled(Enum.HumanoidStateType.Dead, true)
+		hum.BreakJointsOnDeath = true
+		hum.MaxHealth = 100
+		hum.Health = 100
+	end
+	
+	
+	
+	button.MouseButton1Click:Connect(function()
+		enableGodMode() 
+		wait(0.1)
+		disableGodMode() 
+	end)
+	
+	
+end
+coroutine.wrap(WWTQU_fake_script)()
+local function LNIPZO_fake_script() -- Teleport_2.LocalScript 
+	local script = Instance.new('LocalScript', Teleport_2)
+
+	-- SERVICES
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local UserInputService = game:GetService("UserInputService")
+	
+	local player = Players.LocalPlayer
+	local button = script.Parent
+	
+	-- =====================
+	-- SETTINGS (CHANGE HERE)
+	-- =====================
+	local SPEED = 6       -- 🔥 CHANGE THIS FOR SPEED (0.6–1.2 recommended)
+	
+	-- =====================
+	-- STATE
+	-- =====================
+	local enabled = false
+	local moveLoop
+	local godLoop
+	
+	local keys = {
+		W = false,
+		A = false,
+		S = false,
+		D = false
+	}
+	
+	-- =====================
+	-- CHARACTER GETTERS
+	-- =====================
+	local function getChar()
+		return player.Character or player.CharacterAdded:Wait()
+	end
+	
+	local function getHumanoid()
+		return getChar():WaitForChild("Humanoid")
+	end
+	
+	local function getRoot()
+		return getChar():WaitForChild("HumanoidRootPart")
+	end
+	
+	-- =====================
+	-- INPUT TRACKING
+	-- =====================
+	UserInputService.InputBegan:Connect(function(input, gpe)
+		if gpe then return end
+		if keys[input.KeyCode.Name] ~= nil then
+			keys[input.KeyCode.Name] = true
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if keys[input.KeyCode.Name] ~= nil then
+			keys[input.KeyCode.Name] = false
+		end
+	end)
+	
+	-- =====================
+	-- CFRAME WALK
+	-- =====================
+	local function startCFrameWalk()
+		if moveLoop then moveLoop:Disconnect() end
+	
+		moveLoop = RunService.RenderStepped:Connect(function()
+			if not enabled then return end
+	
+			local root = getRoot()
+			local cam = workspace.CurrentCamera
+			local move = Vector3.zero
+	
+			if keys.W then move += cam.CFrame.LookVector end
+			if keys.S then move -= cam.CFrame.LookVector end
+			if keys.A then move -= cam.CFrame.RightVector end
+			if keys.D then move += cam.CFrame.RightVector end
+	
+			if move.Magnitude > 0 then
+				root.CFrame = root.CFrame + (move.Unit * SPEED)
+			end
+		end)
+	end
+	
+	local function stopCFrameWalk()
+		if moveLoop then
+			moveLoop:Disconnect()
+			moveLoop = nil
+		end
+	end
+	
+	-- =====================
+	-- GODMODE + ANTI RAGDOLL
+	-- =====================
+	local function startGodmode()
+		if godLoop then godLoop:Disconnect() end
+	
+		godLoop = RunService.Stepped:Connect(function()
+			local humanoid = getHumanoid()
+			local root = getRoot()
+	
+			-- INFINITE HEALTH
+			humanoid.MaxHealth = math.huge
+			humanoid.Health = math.huge
+	
+			-- BLOCK DEATH
+			humanoid:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
+	
+			-- ANTI RAGDOLL / STUN
+			humanoid:SetStateEnabled(Enum.HumanoidStateType.Ragdoll, false)
+			humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown, false)
+			humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics, false)
+			humanoid:ChangeState(Enum.HumanoidStateType.Running)
+	
+			-- ANTI KNOCKBACK / FLING
+			root.AssemblyLinearVelocity = Vector3.zero
+			root.AssemblyAngularVelocity = Vector3.zero
+		end)
+	end
+	
+	local function stopGodmode()
+		if godLoop then
+			godLoop:Disconnect()
+			godLoop = nil
+		end
+	end
+	
+	-- =====================
+	-- TOGGLE BUTTON
+	-- =====================
+	button.MouseButton1Click:Connect(function()
+		enabled = not enabled
+	
+		if enabled then
+			button.Text = "ON"
+			startCFrameWalk()
+			startGodmode()
+		else
+			button.Text = "OFF"
+			stopCFrameWalk()
+			stopGodmode()
+		end
+	end)
+	
+	-- =====================
+	-- RESPAWN SAFE
+	-- =====================
+	player.CharacterAdded:Connect(function()
+		if enabled then
+			task.wait(0.2)
+			startCFrameWalk()
+			startGodmode()
+		end
+	end)
+	
+end
+coroutine.wrap(LNIPZO_fake_script)()
+local function CJJVCJC_fake_script() -- PanicButton.LocalScript 
+	local script = Instance.new('LocalScript', PanicButton)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		-- Find the ScreenGui this button belongs to
+		local gui = button:FindFirstAncestorOfClass("ScreenGui")
+	
+		if gui then
+			gui:Destroy()
+		end
+	end)
+	
+end
+coroutine.wrap(CJJVCJC_fake_script)()
+local function GFXETEQ_fake_script() -- MainFrame.Drag 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+	
+end
+coroutine.wrap(GFXETEQ_fake_script)()
